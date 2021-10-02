@@ -1,2 +1,1 @@
-# Playground
-Just a place for me to tinker and try new skills
+Playground for personal testing and making your own crazy webpage!
