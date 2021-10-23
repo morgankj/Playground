@@ -29,6 +29,8 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     /* border:1px solid grey; */
 }
 /*------------------------------------------------*/
@@ -118,7 +120,7 @@ header .homeHeader {
 }
 
 .homeHeader h1 {
-    padding: 0 0 1.4%;
+    margin: 0 0 4%;
 }
 
 .homeHeader h2 {
@@ -135,19 +137,52 @@ header .homeHeader p {
     margin: 2% 0 1% 0;
 }
 
+/* Cool button customization */
 .homenavbar a {
     display: inline-block;
-    padding: 1% 3%;
-    text-decoration: none;
-    background-color: #470023;
-    color: #fff;
-    transition: .5s;
+    padding: 1% 2%;
     border-radius: 10px;
+    text-decoration: none;
+    margin: .3%;
+    transition: all .4s ease-in-out;
+    color: #470023;
+
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #ffce7e, #90c4ff, #f7186a , #ffb742);
+    /* background-image: linear-gradient(to right, #ffce7e, #ff5996, #f7186a , #ffb742); */
+    box-shadow: 0 4px 8px 0 rgba(236, 116, 149, 0.75);
 }
 
-.homenavbar a:hover{
-    background-color:#AB0C5A;
+.homenavbar a:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: #fff;
 }
+
+/* Adding animated flowers from the sides */
+#sideFlowers {
+    background-image: url('https://freepngimg.com/thumb/flowers/23441-2-yellow-flowers-bouquet-transparent-image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 100vh;
+
+    /* rotate image */
+    -webkit-transform: rotate(-100deg);
+    -moz-transform: rotate(-100deg);
+    -ms-transform: rotate(-100deg);
+    -o-transform: rotate(-100deg);
+    transform: rotate(-100deg);
+}
+
+
 /*------------------------------------------------*/
 /*Home Page*/
 /*Images*/
