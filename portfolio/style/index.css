@@ -84,7 +84,7 @@ section{
     flex-wrap: wrap;
 }
 
-.generalHeader .navbar a {
+/* .generalHeader .navbar a {
     text-decoration: none;
     padding: 1% 4%;
     background-color: #470023;
@@ -92,11 +92,38 @@ section{
     transition: .5s;
     border-radius: 10px;
     margin: 1%;
+} */
+
+.generalHeader .navbar a {
+    text-decoration: none;
+    padding: 1% 4%;
+    color: #fff;
+    border-radius: 10px;
+    margin: 1%;
+
+    transition: all .4s ease-in-out;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #ffce7e, #729ed1, #f7186a , #ffb742);
+    /* background-image: linear-gradient(to right, #ffce7e, #ff5996, #f7186a , #ffb742); */
+    box-shadow: 0 4px 8px 0 rgba(236, 116, 149, 0.75);
 }
 
-.generalHeader .navbar a:hover{
-    background-color:#AB0C5A;
+.generalHeader .navbar a:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: #fff;
 }
+
+/* .generalHeader .navbar a:hover{
+    background-color:#AB0C5A;
+} */
 
 /*------------------------------------------------*/
 /*Home Page Header*/
@@ -146,9 +173,9 @@ header .homeHeader p {
     border-radius: 10px;
     text-decoration: none;
     margin: .3%;
-    transition: all .4s ease-in-out;
     color: #fff;
 
+    transition: all .4s ease-in-out;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
