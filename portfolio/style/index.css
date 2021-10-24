@@ -121,11 +121,13 @@ header .homeHeader {
 
 .homeHeader h1 {
     margin: 0 0 4%;
+    z-index: 0;
 }
 
 .homeHeader h2 {
     font-size: 5rem;
     font-family: 'Pacifico', cursive;
+    z-index: 0;
 }
 
 header .homeHeader p {
@@ -145,14 +147,14 @@ header .homeHeader p {
     text-decoration: none;
     margin: .3%;
     transition: all .4s ease-in-out;
-    color: #470023;
+    color: #fff;
 
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
 
     background-size: 300% 100%;
-    background-image: linear-gradient(to right, #ffce7e, #90c4ff, #f7186a , #ffb742);
+    background-image: linear-gradient(to right, #ffce7e, #729ed1, #f7186a , #ffb742);
     /* background-image: linear-gradient(to right, #ffce7e, #ff5996, #f7186a , #ffb742); */
     box-shadow: 0 4px 8px 0 rgba(236, 116, 149, 0.75);
 }
@@ -167,19 +169,49 @@ header .homeHeader p {
 }
 
 /* Adding animated flowers from the sides */
-#sideFlowers {
+#sideFlowersLeft {
     background-image: url('https://freepngimg.com/thumb/flowers/23441-2-yellow-flowers-bouquet-transparent-image.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: left top;
-    height: 100vh;
-
+    height: 74vh;
+    width: 48%;
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    left: -30%;
+    overflow: hidden;
+    z-index: 1;
     /* rotate image */
-    -webkit-transform: rotate(-100deg);
-    -moz-transform: rotate(-100deg);
-    -ms-transform: rotate(-100deg);
-    -o-transform: rotate(-100deg);
-    transform: rotate(-100deg);
+    -webkit-transform: rotate(-80deg);
+    -moz-transform: rotate(-80deg);
+    -ms-transform: rotate(-80deg);
+    -o-transform: rotate(-80deg);
+    transform: rotate(-80deg);
+    /* animate */
+    transition: 1s;
+}
+
+#sideFlowersRight {
+    background-image: url('https://freepngimg.com/thumb/flowers/23441-2-yellow-flowers-bouquet-transparent-image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 72vh;
+    width: 50%;
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    right: -24%;
+    top: -10%;
+    overflow: hidden;
+    z-index: 1;
+    /* rotate image */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    /* animate */
+    transition: 1s;
 }
 
 
@@ -257,9 +289,9 @@ header .homeHeader p {
     font-size: 10rem;
     font-family: 'Pacifico', cursive;
     background-size: cover;
-    background-position: center;
+    background-position: 25%;
     height: 50vh;
-    background-image: url("https://www.mydomaine.com/thmb/vkwBdwqlJuw2BOSnkA2KXGLx6MM=/1620x1080/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-553008767-c056931e4004459d97f8d47584e5a18f.jpg");
+    background-image: url("https://images.unsplash.com/photo-1457089328109-e5d9bd499191?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=726&q=80");
 }
 /*------------------------------------------------*/
 /*Contact*/
